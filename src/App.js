@@ -1,9 +1,12 @@
 import "./App.css";
+import Signup from "./Components/Signup/Signup";
 
 function App() {
-  let x = process.env.REACT_APP_authDomain;
-  console.log(x);
-  return <div className="App">Hello</div>;
+  return (
+    <div className="App">
+      <Signup />
+    </div>
+  );
 }
 
 export default App;
