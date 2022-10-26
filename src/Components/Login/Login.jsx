@@ -1,4 +1,4 @@
-import "./signup.css";
+import "../Signup/signup.css";
 import googleIcon from "../../Assets/google.png";
 import githubIcon from "../../Assets/github.png";
 import rightArrow from "../../Assets/right-arrow.png";
@@ -9,26 +9,27 @@ export default function Signup() {
       <div className="signup_wrapper">
         <header>
           <h4>Welcome to NewsTime</h4>
-          <p>Let's Signup to see the trending news</p>
+          <p>Let's Login to see the trending news</p>
         </header>
         <form>
           <input type="text" placeholder="Email Address" />
           <br />
           <input type="password" placeholder="Password" />
-          <br />
-          <input type="password" placeholder="Confirm Password" />
-          <div className="options"></div>
-          <button>Sign Up</button>
+          <div className="options">
+            <span>Create Account</span>
+            <span>Forgot Password?</span>
+          </div>
+          <button>Log In</button>
         </form>
         <div className="other_methods">
           <div>
             <img src={googleIcon} alt="googleIcon" width="18px" />
-            <span>Sign Up with Google</span>
+            <span>Log In with Google</span>
             <img src={rightArrow} alt="rightArrow" id="arrow" />
           </div>
           <div>
             <img src={githubIcon} alt="githubIcon" width="18px" />
-            <span>Sign Up with Github</span>
+            <span>Log In with Github</span>
             <img src={rightArrow} alt="rightArrow" id="arrow" />
           </div>
         </div>
