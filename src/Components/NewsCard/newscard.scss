@@ -1,0 +1,17 @@
+.newscard {
+  display: flex;
+  width: 22vw;
+  .card_wrapper {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 12rem;
+    }
+    .details {
+      span {
+        font-size: 11px;
+        color: gray;
+      }
+    }
+  }
+}

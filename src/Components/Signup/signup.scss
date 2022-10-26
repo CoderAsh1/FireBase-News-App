@@ -43,8 +43,9 @@
         display: flex;
         margin-bottom: 0.5rem;
         justify-content: space-between;
-
+        align-items: center;
         span {
+          font-size: 10px;
           color: rgb(4, 95, 231);
           font-weight: 600;
         }

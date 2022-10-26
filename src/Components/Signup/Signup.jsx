@@ -2,6 +2,7 @@ import "./signup.css";
 import googleIcon from "../../Assets/google.png";
 import githubIcon from "../../Assets/github.png";
 import rightArrow from "../../Assets/right-arrow.png";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
@@ -17,7 +18,14 @@ export default function Signup() {
           <input type="password" placeholder="Password" />
           <br />
           <input type="password" placeholder="Confirm Password" />
-          <div className="options"></div>
+          <div className="options">
+            <Link to="/login">
+              <span>Already have an account ?</span>
+            </Link>
+            <Link to="/login">
+              <span>Sign In</span>
+            </Link>
+          </div>
           <button>Sign Up</button>
         </form>
         <div className="other_methods">

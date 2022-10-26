@@ -2,6 +2,7 @@ import "../Signup/signup.css";
 import googleIcon from "../../Assets/google.png";
 import githubIcon from "../../Assets/github.png";
 import rightArrow from "../../Assets/right-arrow.png";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
@@ -9,15 +10,19 @@ export default function Signup() {
       <div className="signup_wrapper">
         <header>
           <h4>Welcome to NewsTime</h4>
-          <p>Let's Login to see the trending news</p>
+          <p>Let's Login and see the trending news</p>
         </header>
         <form>
           <input type="text" placeholder="Email Address" />
           <br />
           <input type="password" placeholder="Password" />
           <div className="options">
-            <span>Create Account</span>
-            <span>Forgot Password?</span>
+            <Link to="/signup">
+              <span>Create Account</span>
+            </Link>
+            <Link to="#">
+              <span>Forgot Password?</span>
+            </Link>
           </div>
           <button>Log In</button>
         </form>

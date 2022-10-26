@@ -1,0 +1,14 @@
+.newscard {
+  display: flex;
+  width: 22vw;
+}
+.newscard .card_wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 12rem;
+}
+.newscard .card_wrapper .details span {
+  font-size: 11px;
+  color: gray;
+}/*# sourceMappingURL=newscard.css.map */
